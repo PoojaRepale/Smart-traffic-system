@@ -8,8 +8,10 @@
     <style>
 
 body {
+    background-image: url("images/car5.jpeg");
+    background-size: cover;
+    opacity: 0.8;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,16 +20,18 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #1f0d0d;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    box-shadow: 0 0 10px rgba(203, 38, 38, 0.1);
+    width: 500px;
+    height: 300px;
 }
 
 .signin-form h2 {
     margin-bottom: 20px;
     text-align: center;
+    color: #ccc;
 }
 
 .form-group {
@@ -37,13 +41,14 @@ body {
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    color: #ccc;
 }
 
 .form-group input {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #1e0606;
     border-radius: 4px;
 }
 
@@ -103,15 +108,15 @@ document.getElementById('signInForm').addEventListener('submit', function(event)
     const password = document.getElementById('password').value;
     const errorMessage = document.getElementById('error-message');
 
-    // Basic validation (you might want to add more robust validation)
+    
     if (email === '' || password === '') {
         errorMessage.textContent = 'Please fill in both fields.';
     } else {
-        // Simulate sign-in (replace this with actual authentication logic)
+        
         if (email === 'test@example.com' && password === 'password') {
             errorMessage.textContent = '';
             alert('Sign in successful!');
-            // Redirect to another page or perform another action
+            
         } else {
             errorMessage.textContent = 'Invalid email or password.';
         }
