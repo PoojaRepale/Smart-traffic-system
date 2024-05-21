@@ -170,7 +170,6 @@ a{
 
 
 
-/* why choose */
 
 /* why choose */
 
@@ -295,3 +294,77 @@ a{
     color: #a81010;
   }
  */
+
+
+ /* footer */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #1f0d0d;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    /* bottom: 0; */
+    width: 100%;
+    text-align: center;
+    margin-bottom: -500px;
+    margin-top: 400px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.footer-left h3,
+.footer-left p,
+.footer-right p {
+    margin: 5px 0;
+}
+
+.footer-middle .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-middle .social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-middle .social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
