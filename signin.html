@@ -57,7 +57,7 @@ body {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #2b76cd;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -100,7 +100,7 @@ button:hover {
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <button type="submit">Sign In</button>
+                <button type="submit"><a href="./index.html" style="color: white;">Submit</a></button>
                 <div id="error-message"></div>
 
                 <div class="iconn">
@@ -135,6 +135,8 @@ document.getElementById('signInForm').addEventListener('submit', function(event)
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     const errorMessage = document.getElementById('error-message');
+
+    // localStorage.getItem('user', JSON.stringify(user));
 
     
     if (email === '' || password === '') {
