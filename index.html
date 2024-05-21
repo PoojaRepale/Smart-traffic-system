@@ -35,7 +35,7 @@
         width: 100%;
         text-align: center;
         margin-bottom: -500px;
-        margin-top: 400px;
+        margin-top: 200px;
     }
 
     .footer-content {
@@ -86,10 +86,23 @@
         text-decoration: underline;
     }
 
-    .cards {
+    .card1 {
         display: flex;
         justify-content: space-evenly;
-        margin-top: 100px;
+
+    }
+    .card {
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
     }
 </style>
 
@@ -106,25 +119,77 @@
     <!-- traffic-Restaurant card -->
 
 
-    <div class="cards">
-        <div class="card" style="width: 20rem;">
-            <img src="..." class="card-img-top" alt="...">
+    <div class="card1">
+        <div class="card" style="width: 40rem;">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.7ybc_wvDAG_w59oz9CiwCAHaEK&pid=Api&P=0&h=180"
+                            class="d-block w-100" alt="..." height="360px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.eZD3Mp16aNqPSN7yOOss2wHaE7&pid=Api&P=0&h=180"
+                            class="d-block w-100" alt="..." height="360px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.5hmUDGn1RngY6zI8plMIogHaD4&pid=Api&P=0&h=180"
+                            class="d-block w-100" alt="..." height="360px">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
             <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <h5 class="card-text">Pargaon Road ,300m long traffic line.</h5>
+                <button. onclick="traffic()" style="color: rgb(94, 146, 189);">View More</button>
             </div>
         </div>
 
 
-        <div class="card" style="width: 20rem;">
-            <img src="..." class="card-img-top" alt="...">
+
+        <div class="card" style="width: 40rem;">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.AQNxR5GhNn0GiV6qjHMV4QHaEn&pid=Api&P=0&h=180"
+                            class="d-block w-100" alt="..." height="360px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.SjY_t7Yw3EduledzWtGzywHaE8&pid=Api&P=0&h=180"
+                            class="d-block w-100" alt="..." height="360px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.39z5vB1FyM0QVijdLRSbIwHaD_&pid=Api&P=0&h=180"
+                            class="d-block w-100" alt="..." height="360px">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
             <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <h5 class="card-text">Some attractive Restaurants on pargaon road</h5>
+                <button. onclick="restaurant()" style="color:rgb(94, 146, 189);">View More</button>
             </div>
         </div>
-    </div>
+    </div> 
 
+    
     <!--footer-->
 
 
@@ -152,6 +217,9 @@
         </div>
     </footer>
 
+    
+    
+
 </body>
 
-</html>\
+</html >
