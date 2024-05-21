@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+
+body {
+    background-image: url("images/car5.jpeg");
+    background-size: cover;
+    opacity: 0.8;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background-color: #1f0d0d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height:450px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+   
+}
+
+input {
+    width: 480px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;   
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+p{
+    color: bisque;
+    margin-left: 110px;
+    margin-top: 30px;
+}
+.iconn{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    
+}
+
+#message {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+}
+
+    </style>
+
+
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        <form id="signup-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign Up</button>
+
+             <p>Alreday have a account <a href="./signin.html" style="color: #007BFF;">Sign in</a></p>
+
+
+             <div class="iconn">
+             <div class="icon">
+
+                <a href=""><i class="fa-brands fa-facebook" style="border: 1px solid; border-radius: 50%; padding: 10px; color: white; background-color: black; margin-right: 5px;" ></i></a></div>
+                <div class="icon">
+                  <a href=""><i class="fa-brands fa-instagram" style="border: 1px solid; border-radius: 50%; padding: 10px; color: white; background-color: black; margin-right: 5px;" ></i></a></div>
+                  <div class="icon">
+                    <a href=""><i class="fa-brands fa-twitter" style="border: 1px solid; border-radius: 50%; padding: 10px; color: white; background-color: black; margin-right: 5px;" ></i></div>
+                      <div class="icon">
+                      <a href=""><i class="fa-brands fa-whatsapp" style="border: 1px solid; border-radius: 50%; padding: 10px; color: white; background-color: black;" ></i></div>
+                        <div class="icon">
+                        <a href=""><i class="fa-brands fa-linkedin" style="border: 1px solid; border-radius: 50%; padding: 10px; color: white; background-color: black; margin-right: 5px;" ></i></div>
+                          <div class="icon">  
+                <a href=""><i class="fa-brands fa-youtube" style="border: 1px solid; border-radius: 50%; padding: 10px; color: white; background-color: black; margin-right: 40px;" ></i></a>
+                </a>
+              </div>
+            </div>
+             
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script>
+
+document.getElementById('signup-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    const user = {
+        username: username,
+        email: email,
+        password: password
+    };
+
+    localStorage.setItem('user', JSON.stringify(user));
+
+    document.getElementById('message').textContent = 'Sign up successful!';
+    document.getElementById('signup-form').reset();
+});
+
+    </script>
+</body>
+</html>
